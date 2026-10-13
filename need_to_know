@@ -1,0 +1,21 @@
+database -----mysql connection like app.properties
+models ---@entity class (database table)
+schema --- dto 
+repository---actual database queries
+service --- service logic
+routers/controlle -- controllers(endpoints)
+main.py ---@springbootapplication
+
+Entity      -> expense_model.py
+DTO         -> expense_schema.py
+Repository  -> expense_repository.py
+Service     -> expense_service.py
+Controller  -> expense_router.py
+
+----------------------------------
+type python -m venv venv
+venv\Script\Activate
+uvicorn main:app --reload
+
+---------------------------------
+step 1 : connection between mysql database 
