@@ -16,8 +16,8 @@ def create_exam(db, exam):
 def fetch_all_exams(db):
     return get_all_exams(db)
 
-def fetch_exam_by_id(db):
-    return get_exam_by_id(db, exam_)
+def fetch_exam_by_id(db, exam_id):
+    return get_exam_by_id(db, exam_id)
 
 def modify_exam(db, exam_id, exam):
 

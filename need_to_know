@@ -1,3 +1,5 @@
+
+
 database -----mysql connection like app.properties
 models ---@entity class (database table)
 schema --- dto 
@@ -19,3 +21,21 @@ uvicorn main:app --reload
 
 ---------------------------------
 step 1 : connection between mysql database 
+
+
+cd D:\OneDrive - Coforge Limited\Desktop\FASTAPI\FASTAPI
+venv\Scripts\activate
+pytest -v
+
+pytest --cov=.
+pytest --cov=. --cov-report=html
+start htmlcov\index.html
+
+pytest tests/test_student.py -v
+
+
+pytest tests/test_course.py -v
+
+pytest tests/test_exam.py -v
+
+pytest --cov=. -v   ==(Runn test+ Coverage)
